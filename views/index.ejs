@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="stylesheets/index.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Genomiki</title>
+  </head>
+  <body style="background-color: #dde0d7">
+    <nav class="navbar navbar-default navbar-fixed-top bg-light" style=" height: 70px ">
+      <div class="container-fluid">
+          <!-- <a href="#home" class="logo">Dental <span>Care.</span> </a> -->
+          <img src="/images/geno.png" alt="logo" style="width:6rem; height: 5rem; padding: 2px 0px 24px 20px;">
+         
+          <h3 style="color:#00B8B8; padding: 2px 0px 24px 20px;">WelCome to Ginomiki@gmail.com</h3>
+          
+
+          
+        </div>
+      </div>
+    </nav>
+    <% if (message.length> 0) { %>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong><%= message %></strong> You should check in on some of those fields below.
+        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <% } %>
+    <br /><br /><br />
+    <div class="container">
+      <br /><br />
+      <div class="row">
+        <div class="col-sm-4 offset-4 divup">
+          <div class="divdown" height="2.5rem" width="6.2rem">
+            <br />
+            <h2 class="text-center text-success font-weight-bold">Welcome</h2>
+            <form action="/userauth" method="post" >
+              <div class="container text-center">
+                <input
+                  type="text"
+                  class="form-control text"
+                  placeholder="username"
+                  name="username"
+                />
+                <br /><br />
+                <input
+                  type="password"
+                  class="form-control text"
+                  placeholder="password"
+                  name="userpass"
+                />
+                <br /><br /><br />
+                <button
+                  class="btn btn-success bt-lg forbutton"
+                  style="border-radius: 2.3rem"
+                >
+                  Login
+                </button>
+                <br /><br /><br />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

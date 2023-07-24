@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+
+
+:root{
+    --blue:#206a5d;
+    --black:#333;
+    --white:#fff;
+    --light-color:#666;
+    --light-bg:#eee;
+    --border:.2rem solid rgba(0,0,0,.1);
+    --box-shadow:0 .5rem 1rem rgba(0, 0, 0.1);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+
+}   
+
+::-webkit-scrollbar{
+    height: .5rem;
+    width:1rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--blue);
+}
+
+html {
+    font-size: 65.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
+.headerr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home
+{
+    background: url('/images/dna.png');
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
+    width: 100%;
+    height: 91.5vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.row .carddd{
+    
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    width:50rem; height: 20rem; margin-left: 1rem;
+    
+}
+
+.row {
+    height: 50rem;
+}
+
+
+.row .cardd{
+    background-color: white;
+    border: 2px dashed black;
+    box-shadow: 5px 5px 10px black;
+    width:40rem; height: 20rem;
+}
+.cardd form {
+    height: 100%;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    /* margin: 30px 0; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px dashed #6990f2;
+    box-shadow: 0 0 1rem blue; */
+}
+
+#nameList {
+    max-height: 16rem;
+    overflow-y: scroll;
+    border: 1px solid green;
+}
+
+#nameList li{
+    /* background: #dedede; */
+    margin-top: 7px;
+}
+
+#nameList::-webkit-scrollbar{
+    width: .4rem;
+    color:green;
+}
+
+.carddd .text {
+    color:green;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+form :where(i){
+    color: #6990f2;
+}
+
+form i{
+    font-size: 9rem;
+}
+
+form .upload-box{
+    font-size: 16px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+    width:350px;
+    outline: none;
+}
+
+::-webkit-file-upload-button{
+    color: white;
+    background: #206a5d;
+    border: none;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 1px 0 1px 1px #6b4559;
+    outline: none;
+}
+
+::-webkit-file-upload-button:hover{
+    background: #438a5e;
+
+}
+
+.logout-btn{
+    font-size: 2rem;
+    padding:.6rem 1.5rem .6rem 1.5rem;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5rem;
+    background: #206a5d;
+    color:white;
+    transition: .3s ease;
+}
+
+.logout-btn:hover{
+    background: #438a5e;
+}
+
+.row .table-list-btn{
+    font-size: 2rem;
+    padding:.6rem 1.5rem .6rem 1.5rem;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5rem;
+    background: #206a5d;
+    color:white;
+    transition: .3s ease;
+}
+
+.table-list-btn:hover{
+    background: #438a5e;
+}
+
+.submit-btn{
+    font-size: 1.5rem;
+    padding:.5rem 1.5rem .5rem 1.5rem;
+    /* padding:0 .5rem; */
+    background: #206a5d;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+    color:white;
+    transition: .3s ease;
+    margin-top: 4rem;
+    /* margin-left: 9rem; */
+}
+
+.submit-btn:hover{
+    background: #438a5e;
+}
+
+
+
+
+@media (max-width:992px){
+
+   .row .carddd{
+        width:40rem;
+        margin: 1.5rem 0;
+    }
+
+    .row .table-list-btn{
+        margin-top: 20rem;
+    }
+
+    .html{
+        overflow: visible;
+    }
+
+    .home{
+        height: 100vh;
+    overflow-y:visible;
+    overflow-x: visible; 
+    }
+
+}

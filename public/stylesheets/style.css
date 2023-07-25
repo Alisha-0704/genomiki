@@ -159,6 +159,21 @@ form .upload-box{
     background: #438a5e;
 }
 
+
+.cmd-btn{
+    font-size: 2rem;
+    padding:.6rem 1.5rem .6rem 1.5rem;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5rem;
+    background: #206a5d;
+    color:white;
+    transition: .3s ease;
+}
+
+.cmd-btn:hover{
+    background: #438a5e;
+}
+
 .row .table-list-btn{
     font-size: 2rem;
     padding:.6rem 1.5rem .6rem 1.5rem;

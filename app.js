@@ -13,6 +13,7 @@ var userauthRouter = require('./routes/userauth');
 var authRouter = require('./routes/auth');
 var reloadRouter = require('./routes/reload');
 var logoutRouter = require('./routes/logout');
+var cmdRouter = require('./routes/cmd');
 var {checkLogin} = require('./controller/index');
 const Sequelize = require('./models/index');
 const table_listRouter = require('./routes/table_list')
@@ -20,7 +21,7 @@ const delete_fileRouter = require('./routes/delete_file')
 
 // database connection
 Sequelize.authenticate().then(() => {
-  console.log("stablish successfully");
+  console.log("establish successfully");
   Sequelize.sync();
 }).catch(err => {
   console.log("db is not connect");
@@ -54,6 +55,7 @@ app.use('/userauth', userauthRouter);
 app.use('/auth', authRouter);
 app.use('/reload', checkLogin, reloadRouter);
 app.use('/logout', checkLogin, logoutRouter);
+app.use('/cmd', cmdRouter);
 app.use('/table_list',  table_listRouter);
 app.use('/delete_file',  delete_fileRouter);
 
